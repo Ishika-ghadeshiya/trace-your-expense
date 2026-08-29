@@ -83,9 +83,9 @@ const Index = () => {
             <div className="bg-card rounded-2xl shadow-xl border border-border p-6 max-w-4xl mx-auto">
               <div className="grid grid-cols-3 gap-4 mb-6">
                 {[
-                  { label: "Total Spent", value: "$4,280", color: "text-foreground" },
-                  { label: "This Month", value: "$1,240", color: "text-primary" },
-                  { label: "Budget Left", value: "$760", color: "text-success" },
+                  { label: "Total Spent", value: "₹4,280", color: "text-foreground" },
+                  { label: "This Month", value: "₹1,240", color: "text-primary" },
+                  { label: "Budget Left", value: "₹760", color: "text-success" },
                 ].map((stat, i) => (
                   <div key={i} className="bg-muted/50 rounded-xl p-4 text-center">
                     <p className="text-sm text-muted-foreground">{stat.label}</p>
