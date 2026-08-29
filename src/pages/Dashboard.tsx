@@ -111,7 +111,7 @@ export default function Dashboard() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Total Spent</p>
-                    <p className="text-2xl font-bold font-display">${stats?.totalExpenses.toFixed(2) || "0.00"}</p>
+                    <p className="text-2xl font-bold font-display">₹{stats?.totalExpenses.toFixed(2) || "0.00"}</p>
                   </div>
                 </div>
               </CardContent>
@@ -126,7 +126,7 @@ export default function Dashboard() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">This Month</p>
-                    <p className="text-2xl font-bold font-display">${stats?.monthlyExpenses.toFixed(2) || "0.00"}</p>
+                    <p className="text-2xl font-bold font-display">₹{stats?.monthlyExpenses.toFixed(2) || "0.00"}</p>
                   </div>
                 </div>
               </CardContent>
@@ -169,8 +169,8 @@ export default function Dashboard() {
           <CardContent>
             <div className="space-y-2">
               <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">Spent: ${stats?.monthlyExpenses.toFixed(2) || 0}</span>
-                <span className="text-muted-foreground">Budget: ${budget?.amount || 0}</span>
+                <span className="text-muted-foreground">Spent: ₹{stats?.monthlyExpenses.toFixed(2) || 0}</span>
+                <span className="text-muted-foreground">Budget: ₹{budget?.amount || 0}</span>
               </div>
               <Progress value={budgetProgress} className="h-3" />
               <p className="text-sm text-muted-foreground">
@@ -283,7 +283,7 @@ export default function Dashboard() {
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
-                        <span className="font-bold font-display">${Number(expense.amount).toFixed(2)}</span>
+                        <span className="font-bold font-display">₹{Number(expense.amount).toFixed(2)}</span>
                         <Button variant="ghost" size="icon" onClick={() => { setEditingExpense(expense.id); setForm({ amount: expense.amount, category: expense.category, date: expense.date, note: expense.note || "" }); setDialogOpen(true); }}>
                           <Edit2 className="w-4 h-4" />
                         </Button>
