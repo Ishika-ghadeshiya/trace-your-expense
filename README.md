@@ -1,73 +1,85 @@
-# Welcome to your Lovable project
+# Smart Expense Hub
 
-## Project info
+Build a full-stack web application called:
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+"Smart Expense Tracker"
 
-## How can I edit this code?
+Goal:
+Help users track daily expenses, view summaries, and manage budgets with a clean dashboard.
 
-There are several ways of editing your application.
+Frontend:
+- Modern, responsive UI.
+- Pages:
+  - Landing page
+  - Login / Signup
+  - Dashboard
+- Dashboard features:
+  - Add / edit / delete expenses
+  - Fields: amount, category, date, note
+  - Expense list with filters (date, category)
+  - Summary cards: total, monthly spend, top category
+  - Charts for category-wise and monthly expenses
+  - Budget input and progress bar
+- Dark / light mode.
+- Toast notifications.
+- Mobile-friendly layout.
 
-**Use Lovable**
+Backend:
+- REST API using Node.js + Express.
+- JWT-based authentication.
+- CRUD APIs for expenses.
+- User-specific data isolation.
+- Budget APIs.
+- Input validation and error handling.
+- Middleware for auth and logging.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Database:
+- MongoDB with Mongoose schemas:
+  - User: name, email, password
+  - Expense: userId, amount, category, date, note
+  - Budget: userId, month, limit
 
-Changes made via Lovable will be committed automatically to this repo.
+Tech Stack:
+Frontend: React or Next.js, Tailwind CSS
+Backend: Node.js, Express
+Database: MongoDB
 
-**Use your preferred IDE**
+Extras:
+- Pagination for expense list.
+- Search by note.
+- Export expenses to CSV.
+- API documentation.
+- Clean component structure.
+- Environment-based config.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Output Required:
+- Complete frontend code.
+- Complete backend code.
+- API routes and controllers.
+- Mongoose schemas.
+- Folder structure.
+- Seed data.
+- README with setup and run instructions.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This project was built with [Lovable](https://lovable.dev).
 
-Follow these steps:
+**Live app**: https://trace-your-expense.lovable.app
+
+## Build with Lovable
+
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/d8f18395-7947-4fa8-908b-53e44e8da4c1).
+
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
+git clone <this-repository-url>
+cd <repository-name>
 npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
