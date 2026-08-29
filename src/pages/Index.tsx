@@ -23,7 +23,7 @@ const Index = () => {
             <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
               <BarChart3 className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-display font-bold text-xl">ExpenseTracker</span>
+            <span className="font-display font-bold text-xl">Trace Your Expense</span>
           </div>
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="icon" onClick={toggleTheme}>
@@ -133,7 +133,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="container mx-auto text-center text-muted-foreground text-sm">
-          © 2024 Smart Expense Tracker. Built with Lovable.
+          © 2024 Trace Your Expense. Built with Lovable.
         </div>
       </footer>
     </div>
